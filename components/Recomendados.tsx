@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Recomendados.css";
-import CardHabitacion from "@/components/CardHabitacion";
-import { NavButton } from "@/components/ui/NavButton";
+import CardHabitacion from "./CardHabitacion";
+import { NavButton } from "./ui/NavButton";
 
 export const Recomendados = () => {
   const containerRef = useRef<HTMLDivElement>(null);
