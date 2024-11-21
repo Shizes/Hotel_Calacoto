@@ -1,9 +1,9 @@
 "use client";
 import { getPrincipal } from '@/lib/getPrincipal';
 import { use, useEffect, useState } from 'react';
-import Menu from './Menu';
+import Servi from './Servi';
 
-interface MenuType {
+interface ServiType {
     id: string;
     name: string;
     image: string;
@@ -11,27 +11,27 @@ interface MenuType {
 
 
 const Servicios = () => {
-  const [menu, setMenu] = useState<MenuType[]>([]);
+  const [servi, setServi] = useState<ServiType[]>([]);
 
   useEffect(() => {
-    async function fetchMenu() {
+    async function fetchServi() {
       try {
         const response = await getPrincipal(
           "https://673e55760118dbfe860b0087.mockapi.io/api/v1/servicios"
         );
-        setMenu(response);
+        setServi(response);
       } catch (error) {
         console.error("Error al obtener los servicios:", error);
       }
     }
-    fetchMenu();
+    fetchServi();
   }, []);
 
   return (
     <div>
       <div>
-        {menu.map((menu) => (
-          <Menu key={menu.id} menu={menu} />
+      {servi.map((servi) => (
+          <Servi key={servi.id} servi={servi} />
         ))}
       </div>
     </div>
