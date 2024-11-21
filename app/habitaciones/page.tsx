@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/ui/Navbar";
+import Footer from "../../components/ui/Footer";
+
 
 const Habitaciones = () => {
   const [rooms, setRooms] = useState([]);
@@ -24,6 +26,9 @@ const Habitaciones = () => {
 
   return (
     <div>
+      {/* Navbar */}
+      <Navbar />
+
       {/* Barra superior ajustada */}
       <div
         style={{
@@ -35,7 +40,7 @@ const Habitaciones = () => {
           borderBottom: "1px solid #ddd",
           position: "sticky",
           top: "0",
-          zIndex: "1000",
+          zIndex: "1000", // Asegura que la barra superior esté sobre otros elementos
         }}
       >
         {/* Iconos y texto */}
@@ -90,6 +95,7 @@ const Habitaciones = () => {
             fontSize: "14px",
             fontWeight: "bold",
             cursor: "pointer",
+            zIndex: "999", // Coloca el botón por encima de otros elementos
           }}
         >
           Reservas
@@ -97,7 +103,6 @@ const Habitaciones = () => {
       </div>
 
       {/* Imagen y descripción */}
-      <Navbar />
       <div
         style={{
           position: "relative",
@@ -223,6 +228,7 @@ const Habitaciones = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
