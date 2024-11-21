@@ -1,0 +1,28 @@
+.nav-button {
+    background-color: #fff;
+    border: 1px solid #b1b5c3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a91f8c;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .nav-button.left {
+    left: 0;
+  }
+  
+  .nav-button.right {
+    right: 0;
+  }
+  
+  .nav-button i {
+    font-size: 1.2rem;
+  }
+  
