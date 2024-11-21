@@ -28,10 +28,18 @@ const Servicios = () => {
     fetchServi();
   }, []);
 
+  const titleStyle = {
+    fontSize: "24px",
+    fontWeight: "bold",
+    color: "#a0007e", // Color del texto
+    textAlign: "center" as const,
+    marginBottom: "20px",
+  };
+
   return (
     <div>
       <div>
-      <h2>Servicios</h2> 
+      <h2 style={titleStyle}>Servicios</h2> 
       {servi.map((servi) => (
           <Servi key={servi.id} servi={servi} />
         ))}
