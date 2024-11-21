@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import menu from "@/components/Menu";
 
 function principal() {
   return (
-      <div></div>
-  )
+    <>
+      <div>presentacion</div>
+      <div>
+        <menu />
+      </div>
+    </>
+  );
 }
 
-export default principal
+export default principal;
