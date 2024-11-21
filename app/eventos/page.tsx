@@ -1,10 +1,12 @@
 import React from 'react'
-import Botones from "@/components/Botones";
+
+
+
 
 const eventos = () => {
   return (
-    <div><Botones/></div>
-  )
+    <div>eventos</div>
+)
 }
 
 export default eventos

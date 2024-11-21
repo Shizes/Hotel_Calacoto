@@ -1,11 +1,9 @@
 import Image from "next/image";
 import principal from "./Principal/page";
-import Botones from "@/components/Botones";
-import Servicios from "@/components/Servicios";
-
+import Navbar from "../components/ui/Navbar";
+import Footer from "../components/ui/Footer";
 export default function Home() {
   return (
-  <div><Botones />
-        <Servicios /></div>
+  <div></div>
   );
 }

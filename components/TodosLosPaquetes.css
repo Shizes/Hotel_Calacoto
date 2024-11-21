@@ -1,0 +1,17 @@
+.todos-paquetes {
+    padding: 20px 16px;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #000;
+  }
+  
+  .paquetes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(152px, 1fr)); /* Adaptable a mobile */
+    gap: 16px;
+  }
+  

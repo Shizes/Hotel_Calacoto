@@ -1,6 +1,6 @@
 import React from "react";
-import Botones from "@/components/Botones";
-import Servicios from "@/components/Servicios";
+import Botones from "../../components/Botones";
+import Servicios from "../../components/Servicios";
 
 function principal() {
   return (
