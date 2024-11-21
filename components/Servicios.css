@@ -1,0 +1,65 @@
+/* Contenedor principal */
+.services-list {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .services-title {
+    font-size: 1.5rem;
+    color: #a80085;
+    margin-bottom: 1rem;
+  }
+  
+  /* Diseño de cuadrícula para los servicios */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en móviles */
+    gap: 1rem;
+  }
+  
+  /* Tarjeta de servicio */
+  .service-item {
+    background-color: #fce4f8;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ícono de servicio */
+  .service-icon {
+    width: 40px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Título del servicio */
+  .service-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #a80085;
+  }
+  
+  /* Adaptación para pantallas más pequeñas */
+  @media (max-width: 375px) {
+    .services-title {
+      font-size: 1.2rem; /* Reduce el tamaño del título */
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+  
+    .service-item {
+      padding: 0.8rem; /* Reduce el padding de las tarjetas */
+    }
+  
+    .service-icon {
+      width: 30px; /* Reduce el tamaño de los íconos */
+    }
+  
+    .service-title {
+      font-size: 0.8rem; /* Ajusta el tamaño del texto */
+    }
+  }
+  

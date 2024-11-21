@@ -1,0 +1,38 @@
+/* Global Styles specific to Hero */
+body {
+    background-color: #f9f9f9;
+  }
+  
+  /* Component-specific Styles */
+  .hero {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    color: #a80085;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .hero-action {
+    width: 40px;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .hero-action:hover {
+    transform: scale(1.1);
+  }
+  
+  .hero-image {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+  

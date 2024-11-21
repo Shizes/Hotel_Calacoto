@@ -1,0 +1,46 @@
+/* Global Styles specific to OffersList */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Component-specific Styles */
+  .offers-list {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .offer-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .offer-image {
+    width: 100%;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .new-price {
+    color: #e91e63;
+    font-weight: bold;
+  }
+  
+  .status.disponible {
+    color: green;
+  }
+  
+  .status.agotado {
+    color: red;
+  }
+  
