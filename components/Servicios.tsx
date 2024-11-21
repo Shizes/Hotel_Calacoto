@@ -1,27 +1,27 @@
 "use client";
-import { getPrincipal } from "@/lib/getPrincipal";
-import { useEffect, useState } from "react";
-import Menu from "./Menu";
-import { fetchExternalImage } from "next/dist/server/image-optimizer";
+import { getPrincipal } from '@/lib/getPrincipal';
+import { use, useEffect, useState } from 'react';
+import Menu from './Menu';
 
 interface MenuType {
-  id: string;
-  name: string;
-  image: string;
-}
+    id: string;
+    name: string;
+    image: string;
+  }
 
-const Botones = () => {
+
+const Servicios = () => {
   const [menu, setMenu] = useState<MenuType[]>([]);
 
   useEffect(() => {
     async function fetchMenu() {
       try {
         const response = await getPrincipal(
-          "https://673e55760118dbfe860b0087.mockapi.io/api/v1/botones"
+          "https://673e55760118dbfe860b0087.mockapi.io/api/v1/servicios"
         );
         setMenu(response);
       } catch (error) {
-        console.error("Error al obtener los botones:", error);
+        console.error("Error al obtener los servicios:", error);
       }
     }
     fetchMenu();
@@ -38,4 +38,4 @@ const Botones = () => {
   );
 };
 
-export default Botones;
+export default Servicios

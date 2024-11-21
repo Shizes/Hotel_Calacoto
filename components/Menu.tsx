@@ -1,39 +1,19 @@
-"use client";
-import { getPrincipal } from "@/lib/getPrincipal";
-import { useEffect, useState } from "react";
-import Botones from "./Botones";
+import React from "react";
 
-interface ButtonType {
-  id: string;
-  name: string;
-  image: string;
+interface MenuProps {
+  menu: {
+    id: string;
+    name: string;
+    image: string;
+  };
 }
 
-const Menu = () => {
-  const [boton, setBoton] = useState<ButtonType[]>([]);
-
-  useEffect(() => {
-    async function fetchBotones() {
-      try {
-        const response = await getPrincipal(
-          "https://673e55760118dbfe860b0087.mockapi.io/api/v1/botones"
-        );
-        setBoton(response);
-      } catch (error) {
-        console.error("Error al obtener los botones:", error);
-      }
-    }
-    fetchBotones();
-  }, []);
-
+const Menu = ({ menu }: MenuProps) => {
   return (
-    <section>
-      <div>
-        {boton.map((boton) => (
-          <Botones key={boton.id} boton={boton} />
-        ))}
-      </div>
-    </section>
+    <div>
+      <img src={menu.image} alt="boton" />
+      <h2>{menu.name}</h2>
+    </div>
   );
 };
 

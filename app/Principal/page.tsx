@@ -1,12 +1,14 @@
 import React from "react";
-import menu from "@/components/Menu";
+import Botones from "@/components/Botones";
+import Servicios from "@/components/Servicios";
 
 function principal() {
   return (
     <>
       <div>presentacion</div>
       <div>
-        <menu />
+        <Botones />
+        <Servicios />
       </div>
     </>
   );
