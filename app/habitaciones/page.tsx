@@ -28,7 +28,6 @@ const Habitaciones = () => {
     <div>
       {/* Navbar */}
       <Navbar />
-
       {/* Barra superior ajustada */}
       <div
         style={{
@@ -40,7 +39,7 @@ const Habitaciones = () => {
           borderBottom: "1px solid #ddd",
           position: "sticky",
           top: "0",
-          zIndex: "1000", // Asegura que la barra superior esté sobre otros elementos
+          zIndex: "1000",
         }}
       >
         {/* Iconos y texto */}
@@ -83,7 +82,6 @@ const Habitaciones = () => {
             </div>
           </div>
         </div>
-
         {/* Botón de reservas */}
         <button
           style={{
@@ -101,7 +99,6 @@ const Habitaciones = () => {
           Reservas
         </button>
       </div>
-
       {/* Imagen y descripción */}
       <div
         style={{
@@ -232,5 +229,4 @@ const Habitaciones = () => {
     </div>
   );
 };
-
 export default Habitaciones;
