@@ -1,0 +1,29 @@
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+.hero-title {
+  font-size: 2.5rem;
+  color: #a80085;
+}
+.hero-description {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.hero-subtext {
+  color: #555;
+}
+.hero-button {
+  margin: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid #a80085;
+  color: #a80085;
+  cursor: pointer;
+}
+.hero-image {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 5px;
+}

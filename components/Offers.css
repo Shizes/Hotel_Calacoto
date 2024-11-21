@@ -1,0 +1,14 @@
+.offers {
+    text-align: center;
+    padding: 2rem;
+  }
+  .offers-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .offer {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 1rem;
+  }
