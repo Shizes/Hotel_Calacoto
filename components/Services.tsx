@@ -1,26 +1,31 @@
 import React from "react";
-import "./Services.css";
+import "./ServicesList.css";
 
-const Services = () => {
+const services = [
+  { title: "Caja Fuerte", icon: "" },
+  { title: "Wifi", icon: "" },
+  { title: "Restaurante", icon: "" },
+  { title: "Minibar", icon: "" },
+  { title: "Tv Cable", icon: "" },
+  { title: "24/7 Luz", icon: "" },
+  { title: "Lavandería", icon: "" },
+  { title: "Espacio de Parqueo", icon: "" },
+];
+
+const ServicesList = () => {
   return (
-    <section className="services">
+    <section className="services-list">
       <h2>Servicios</h2>
-      <div className="services-list">
-        <div className="service">
-          <img src="/assets/service_wifi.png" alt="WiFi" />
-          <p>WiFi</p>
-        </div>
-        <div className="service">
-          <img src="/assets/service_restaurant.png" alt="Restaurant" />
-          <p>Restaurante</p>
-        </div>
-        <div className="service">
-          <img src="/assets/service_parking.png" alt="Parking" />
-          <p>Parqueo</p>
-        </div>
+      <div className="services-grid">
+        {services.map((service) => (
+          <div className="service-item" key={service.title}>
+            <img src={service.icon} alt={service.title} />
+            <p>{service.title}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
 };
 
-export default Services;
+export default ServicesList;

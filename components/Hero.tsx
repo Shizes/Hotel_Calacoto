@@ -10,7 +10,7 @@ const Hero = () => {
       </p>
       <p className="hero-subtext">Cada momento se siente como la primera vez.</p>
       <button className="hero-button"><img src="" alt="Icon-butoon" className="hero-button"/></button>
-      <img src="/" alt="Hotel Interior" className="hero-image" />
+      <img src="" alt="Hotel Interior" className="hero-image" />
     </section>
   );
 };

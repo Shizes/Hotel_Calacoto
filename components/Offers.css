@@ -1,14 +1,96 @@
-.offers {
-    text-align: center;
-    padding: 2rem;
-  }
-  .offers-list {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  .offer {
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 1rem;
-  }
+.offers-list {
+  text-align: center;
+  padding: 2rem;
+}
+
+.offers-list h2 {
+  font-size: 2rem;
+  color: #a80085;
+}
+
+.offers-list p {
+  margin: 0.5rem 0 1.5rem;
+  color: #555;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.offer-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.offer-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.offer-details {
+  padding: 1rem;
+}
+
+.offer-details h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.offer-price {
+  margin: 0.5rem 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.new-price {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.offer-status {
+  margin: 0.5rem 0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.offer-status.available {
+  color: #4caf50;
+  background-color: #e8f5e9;
+}
+
+.offer-status.unavailable {
+  color: #f44336;
+  background-color: #ffebee;
+}
+
+.offer-button {
+  background-color: #a80085;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.offer-button:hover {
+  background-color: #800063;
+}
+
+.offer-button.unavailable {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
