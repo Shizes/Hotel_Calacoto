@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    align-items: center; /* Alinea todo verticalmente */
+    justify-content: space-between; /* Espacio entre el logo y los botones */
+    padding: 20px 16px 16px 20px; /* Espaciado horizontal */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 64px; /* Altura fija */
+    background-color: #fff; /* Fondo blanco */
+    border-bottom: 1px solid #ddd; /* Línea inferior */
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaciado entre los botones */
+  }
+  
+  .navbar-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Sin relleno adicional */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+  }
+  
+  .navbar-button img {
+    width: 32px; /* Tamaño uniforme para los íconos */
+    height: 32px;
+  }
+  
