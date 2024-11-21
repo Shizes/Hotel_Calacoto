@@ -1,5 +1,5 @@
 import React from "react";
-import "./OffersList.css";
+import "./Offers.css";
 
 const offers = [
   {
