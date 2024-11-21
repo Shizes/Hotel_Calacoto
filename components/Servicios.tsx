@@ -3,6 +3,7 @@ import { getPrincipal } from '@/lib/getPrincipal';
 import { use, useEffect, useState } from 'react';
 import Servi from './Servi';
 
+
 interface ServiType {
     id: string;
     name: string;
@@ -30,6 +31,7 @@ const Servicios = () => {
   return (
     <div>
       <div>
+      <h2>Servicios</h2> 
       {servi.map((servi) => (
           <Servi key={servi.id} servi={servi} />
         ))}
