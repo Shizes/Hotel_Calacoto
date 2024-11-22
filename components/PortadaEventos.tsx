@@ -14,12 +14,7 @@ const PortadaEventos = () => {
           <strong> A LA MEDIDA DE TUS OBJETIVOS.</strong>”
         </p>
         <div className="eventos-icon">
-          {/*<Image
-            src="/img/cumpleaños.png"
-            width={40}
-            height={40}
-            alt="portada"
-          />/*/}
+          <img src="/img/cumpleaños.svg" alt="" />
         </div>
       </div>
     </section>
